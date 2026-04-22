@@ -62,6 +62,8 @@ public class StepDefinitions {
 	public void i_should_see_the_product_details_page() {
 		pagevalidation pageValid = new pagevalidation(driver);
 		 pageValid.switchWindow();
+		 common.quitBrowser();
+		
 	}
 
 

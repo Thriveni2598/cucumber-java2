@@ -20,7 +20,7 @@ public class pagevalidation {
    @FindBy(id = "nav-search-submit-button")
    private WebElement srchbtn;
    
-   @FindBy(xpath = "(//span[text()=\"Apple iPhone 15 (128 GB) - Black\"])[1]")
+   @FindBy(xpath = "//h2[@class='a-size-medium a-spacing-none a-color-base a-text-normal'][1]")
    private WebElement product;
    
    

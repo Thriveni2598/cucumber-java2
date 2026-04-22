@@ -1,5 +1,7 @@
 package utils;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -23,6 +25,8 @@ public class Commonnew {
 			driver.get(url);
 		else
 			driver.get("about:blank");
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	public WebDriver getDriverObject() {
